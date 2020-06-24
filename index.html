@@ -1,11 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Первая старница выпускного проекта</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+  <link rel="stylesheet" href="css/style_socseti.css">
+  <title>Первая старница выпускного проекта</title>
+
 </head>
+
+
 <body>
-    <header> какое то Меню1</header>
+  <Style>
+    a {
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    ul,
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    body {
+      font-family: 'PT Serif', serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #5e5e5e;
+    }
+
+    header {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .header__top {
+      background-color: #303030;
+    }
+
+    .header__btn {
+      float: right;
+      line-height: 36px;
+      color: white;
+      background-color: #01aef0;
+      padding: 5px 20px 4px 50px;
+      font-size: 16px;
+      display: block;
+      position: relative;
+    }
+
+
+    .header__contacts:after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+    .header__phone,
+    .header__email {
+      color: #cbcacb;
+      letter-spacing: 0.25px;
+      line-height: 45px;
+      position: relative;
+    }
+
+    .header__phone {
+      padding-left: 20px;
+      padding-right: 30px;
+    }
+
+    .header__phone:before {
+      content: "\f095";
+      font-family: 'icomoon';
+      position: absolute;
+      left: 0;
+      color: #01aef0;
+    }
+
+    .header__email {
+      padding-left: 24px;
+    }
+
+    .header__email:before {
+      content: "\f003";
+      font-family: 'icomoon';
+      position: absolute;
+      left: 0;
+      color: #01aef0;
+    }
+
+    .header__content {
+      padding: 34px 0px 23px;
+    }
+
+    .header__content-inner {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .menu li {
+      display: inline-block;
+    }
+
+    .menu a {
+      color: #323232;
+      font-size: 16px;
+      line-height: 36px;
+      border: 1px solid transparent;
+      padding: 0px 16px;
+      transition: all .3s;
+    }
+
+    .menu a:hover {
+      border-color: #01aef0;
+    }
+
+    .menu li+li {
+      padding-left: 10px;
+    }
+
+    .main__content {
+      
+      list-style-type: none;
+      margin: 0px;
+      max-width: 1170px;
+      height: 950px;
+
+      margin: 0 auto;
+      padding: 0 0px;
+
+
+    }
+
+    .main__top {
+      max-width: 1170vw;
+      height: 45%;
+      background-image: url(img/main.jpg);
+      background-size: auto;
+    }
+
+    .main__top__text {
+
+      padding-top: 60px;
+    }
+
+    .stroke {
+      text-align: center;
+      color: #01aef0;
+      width: 100%;
+      font-size: 125%;
+      line-height: initial;
+
+
+      font: Arial, sans-serif;
+      text-shadow: white 1px 1px 0, white -1px -1px 0,
+        white -1px 1px 0, white 1px -1px 0;
+
+    }
+
+    .wrapper {
+      margin-top: 45px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-auto-rows: minmax(180px, auto);
+      grid-gap: 3em;
+      justify-items: stretch;
+      align-items: stretch;
+      
+      }
+      .wrapper a {
+
+        color: white;
+      font-size: 50px;
+      line-height: 36px;
+    
+    }
+    
+      
+ 
+   
+    
+
+    .wrapper__box1  {
+    grid-column: 1/5;
+    background-color: #01aef0;
+    border:  solid 1px;
+     border-radius: 5px; 
+    
+
+    }
+
+    .wrapper__box2 {
+      background-color: white;
+    border: #01aef0 solid 1px;
+    border-radius: 5px; 
+    }
+
+    .wrapper__box3 {
+      background-color: white;
+    border: #01aef0 solid 1px;
+    border-radius: 5px; 
+    }
+
+    .wrapper__box4 {
+      background-color: white;
+    border: #01aef0 solid 1px;
+    border-radius: 5px; 
+    }
+
+    .wrapper__box5 {
+      background-color: white;
+    border: #01aef0 solid 1px;
+    border-radius: 5px; 
+    }
+
+    
+    
+    .footer__box {
+      grid-column: 1/5;
+      background-color: #01aef0;
+      border: crimson solid 1px;
+    }
+
+    .box__text {
+      text-align: center;
+      color: #005fb3;
+
+      font-size: 25px;
+      padding-top: 35px;
+      line-height: initial;
+      font: Arial, sans-serif;
+      text-shadow: white 1px 1px 0, white -1px -1px 0,
+        white -1px 1px 0, white 1px -1px 0;
+
+    }
+
+    .box__text__box1 {
+      padding-top: 20px;
+      font-size: 50px;
+      text-align: center;
+      color: white;
+      font: Arial, sans-serif;
+      text-shadow: #005fb3 1px 1px 0, #005fb3 -1px -1px 0,
+        #005fb3 -1px 1px 0, #005fb3 1px -1px 0;
+
+    }
+ 
+
+    
+  </Style>
+
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__contacts">
+          <a class="header__phone" href="tel:375290000000">+375 (29) 000 00 00</a>
+          <a class="header__email" href="#">it@bgtg.by</a>
+          <a class="header__btn" href="#">НИИ Белнипротопгаз</a>
+        </div>
+      </div>
+    </div>
+    <div class="header__content">
+      <div class="container">
+        <div class="header__content-inner">
+          <div class="header__logo" syle="font ">
+            <a href="http://bgtg.by">
+              <img src="img/logo.png" width="50" height="50" alt="logo">
+            </a>
+          </div>
+          <nav class="menu">
+            <div class="header__btn-menu">
+
+            </div>
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Сайт компании</a></li>
+              <li><a href="#">Заявки</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main__content">
+
+    <div class="main__top">
+      <h1>
+        <div class="main__top__text">
+          <p class="stroke">Сайт для ваших заявок
+          <p class="stroke">тут!</p>
+          <p class="stroke"> Выберете раздел</p>
+        </div>
+      </h1>
+    </div>
+
+
+    <div class="wrapper" >
+      <div class="wrapper__box1" >
+        
+        <p class="box__text__box1" > <img src="img/klava.png "width="50px" alt=""><a href="it_otdel.html">IT department</a></p>
+      </div>
+      <div class="wrapper__box2 ">
+         <p class="box__text"><a></a>Хозяйственный отдел</p>
+      </div>
+      <div class="wrapper__box3">
+         <p class="box__text">Отдел главного энергетика</p>
+      </div>
+      <div class="wrapper__box4 ">
+        <p class="box__text">Транспортный отдел</p>
+      </div>
+      <div class="wrapper__box5">
+        <p class="box__text">ПТО</p>
+      </div>
+        <div class="footer__box">
+          <p class="box__text">FOOOTEEER</p>
+      </div>
+
+
+    </div>
+
+
+
+
+  </main>
+  
+
 </body>
+
 </html>
