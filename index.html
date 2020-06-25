@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&amp;subset=cyrillic"
     rel="stylesheet">
@@ -17,7 +16,9 @@
 
 
 <body>
-  <Style>
+ 
+
+<Style>
     a {
       text-decoration: none;
       display: inline-block;
@@ -108,8 +109,12 @@
     }
 
     .header__content-inner {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
     }
 
     .menu li {
@@ -122,6 +127,8 @@
       line-height: 36px;
       border: 2px solid transparent;
       padding: 0px 16px;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
       transition: all .3s;
     }
 
@@ -174,12 +181,15 @@
 
     .wrapper {
       margin-top: 45px;
+      display: -ms-grid;
       display: grid;
+      -ms-grid-columns: 1fr 2vw 1fr 2vw 1fr;
       grid-template-columns: 1fr 1fr 1fr;
       grid-auto-rows: minmax(10vw, auto);
       grid-gap: 2vw;
       justify-items: stretch;
-      align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
       
 
     }
@@ -194,6 +204,8 @@
 
 
     .wrapper__box1 {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
       grid-column: 1/4;
       background-color: #01aef0;
       border: solid 1px #01aef0 ;
@@ -201,11 +213,14 @@
     }
 
     .wrapper__box1:hover {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
       grid-column: 1/4;
       background-color: #01aef0;
       border: solid 1px #01aef0;
       border-radius: 20px;
-      box-shadow: inset 0 0 0 20px white
+      -webkit-box-shadow: inset 0 0 0 20px white;
+              box-shadow: inset 0 0 0 20px white
     }
 
     .wrapper__box2 {
@@ -219,7 +234,8 @@
       background-color: white;
       border: #01aef0 solid 1px;
       border-radius: 20px;
-      box-shadow: inset 0 0 0 23px #01aef0;
+      -webkit-box-shadow: inset 0 0 0 23px #01aef0;
+              box-shadow: inset 0 0 0 23px #01aef0;
     }
 
     .wrapper__box3 {
@@ -232,7 +248,8 @@
       background-color: white;
       border: #01aef0 solid 1px;
       border-radius: 20px;
-      box-shadow: inset 0 0 0 23px #01aef0;
+      -webkit-box-shadow: inset 0 0 0 23px #01aef0;
+              box-shadow: inset 0 0 0 23px #01aef0;
     }
 
     .wrapper__box4 {
@@ -245,7 +262,8 @@
       background-color: white;
       border: #01aef0 solid 1px;
       border-radius: 20px;
-      box-shadow: inset 0 0 0 23px #01aef0;
+      -webkit-box-shadow: inset 0 0 0 23px #01aef0;
+              box-shadow: inset 0 0 0 23px #01aef0;
     }
 
     .wrapper__box5 {
@@ -259,22 +277,28 @@
       background-color: white;
       border: #01aef0 solid 1px;
       border-radius: 20px;
-      box-shadow: inset 0 0 0 23px #01aef0;
+      -webkit-box-shadow: inset 0 0 0 23px #01aef0;
+              box-shadow: inset 0 0 0 23px #01aef0;
     }
 
 
     .footer__box {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
       grid-column: 1/4;
       background-color: #01aef0;
       border: #01aef0 solid 1px;
 border-radius: 5px;
     }
     .footer__box:hover {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
       grid-column: 1/4;
       background-color: #01aef0;
       border: #01aef0 solid 1px;
       border-radius: 20px;
-      box-shadow: inset 0 0 0 20px white
+      -webkit-box-shadow: inset 0 0 0 20px white;
+              box-shadow: inset 0 0 0 20px white
     }
 
     .box__text {
@@ -329,7 +353,7 @@ border-radius: 5px;
             <ul>
               <li><a href="index.html">Главная</a></li>
               <li><a href="https://bgtg.by">Сайт компании</a></li>
-              <li><a href="#top">Соцсети</a></li>
+              <li><a href="#top">Соц. сети</a></li>
               <!-- <li><a href="#">Контакты</a></li> -->
             </ul>
           </nav>
@@ -354,20 +378,20 @@ border-radius: 5px;
     <div class="wrapper">
       <div class="wrapper__box1">
 
-        <p class="box__text__box1"> <a href="it_otdel.html">IT department</a></p>
+        <p class="box__text__box1"> <a href="it_otdel.html">IT Отдел</a></p>
       </div>
       <div class="wrapper__box2 ">
-        <a href="it_otdel.html">
+        <a href="xo_otdel.html">
           <p class="box__text">Хозяйственный отдел</p>
         </a>
       </div>
       <div class="wrapper__box3">
-        <a href="#">
+        <a href="ge_otdel.html">
           <p class="box__text">Отдел главного энергетика</p>
         </a>
       </div>
       <div class="wrapper__box4 ">
-        <a href="#">
+        <a href="vp_otdel.html">
           <p class="box__text">Вспомогательный отдел</p>
         </a>
       </div>

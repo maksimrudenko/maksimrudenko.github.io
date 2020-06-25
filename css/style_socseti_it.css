@@ -1,20 +1,27 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 
 .socialIcons {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  display: inline-block;
-  
+  display:-moz-inline-grid;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  height: 70px;
   text-align:center;
-  padding-left: 35vw;
+  
   padding-top: 3vw;
+  
+  
 }
 .socialIcons li {
   display: inline-block;
@@ -28,12 +35,16 @@
   width: 100px;
   line-height: 100px;
   color: white;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
   text-shadow: 0px 0px 1px black, 0px 0px 1px black;
-  transform: rotateX(-30deg);
+  -webkit-transform: rotateX(-30deg);
+          transform: rotateX(-30deg);
 }
 .socialIcons li a:hover {
-  transform: rotateX(-30deg) translateY(-20px);
+  -webkit-transform: rotateX(-30deg) translateY(-20px);
+          transform: rotateX(-30deg) translateY(-20px);
 }
 .socialIcons li a:hover.facebook {
   color: #365899;
