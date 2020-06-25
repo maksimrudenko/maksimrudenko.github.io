@@ -44,7 +44,13 @@ a {
             margin: 0 auto;
             padding: 0 15px;
         }
-
+        @media only screen and (max-width: 450px) {
+            .container {
+            max-width: 60vw;
+            margin: 0 auto;
+            padding: 0 0px;
+        }
+        }
         body {
             font-family: 'PT Serif', serif;
             font-weight: 400;
@@ -88,8 +94,8 @@ a {
         }
 
         .header__phone {
-            padding-left: 20px;
-            padding-right: 30px;
+            padding-left: 2vw;
+            padding-right: 3vw;
         }
 
         .header__phone:before {
@@ -159,10 +165,6 @@ a {
 
 
         }
-
-
-
-
         .wrapper {
             margin-top: 45px;
             display: -ms-grid;
@@ -188,6 +190,11 @@ a {
 
         .text__it__otdel {
             color: #007bff;
+        }
+        @media only screen and (max-width: 450px){
+            .header__content {
+            padding: 0px 0px 0px;
+        }
         }
     </Style>
     <header class="header">
