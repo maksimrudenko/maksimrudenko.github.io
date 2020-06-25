@@ -14,16 +14,14 @@ $googlePlus:#DB4437;
   @return unquote($value);
 }
 
-body{
-  background-color: $dark;
-}
+
 
 .socialIcons{
   padding:0;
   margin:0;
   list-style-type:none;
   display:inline-block;
-  position:relative;
+  
   top: 0;
   bottom: 0;
   left: 0;
@@ -37,7 +35,7 @@ body{
     
     a{
       text-align:center;
-      display:inline-block;
+      
       font-size:4rem;
       height:100px;
       width:100px;
